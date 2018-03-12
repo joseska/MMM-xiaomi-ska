@@ -1,0 +1,111 @@
+.xm-xiaomi {
+    position: relative;
+}
+
+.xm-disabled {
+  color: black;
+}
+
+.xm-icon {
+  padding-left: 5px;
+}
+
+.xm-room-item {
+  font-size: 16px;
+  margin-bottom: -15px;
+  z-index: 5;
+}
+
+.xm-room-title {
+  display: inline-block;
+  width: 40%;
+  z-index: 5;
+}
+
+.xm-room-bars {
+  display: inline-block;
+  width: 60%;
+  z-index: 5;
+}
+
+.xm-legend-temp {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: darkgrey;
+  left: 9%;
+  z-index: 0;
+}
+
+.xm-legend-humid {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: darkgrey;
+  left: 42%;
+  z-index: 0;
+}
+
+
+.xm-room-container
+{
+    height: 100%; 
+    min-height: 100%;
+    height: 200px;
+}
+
+.xm-room {
+  
+    width: 33.33%;
+    height: 33.33%;
+  background-color: #DDDDDD;
+}
+.xm-room-header {
+  border-bottom-style : solid;
+  border-width: 1px;
+ margin: 5px;
+ //padding: 5px;
+}
+.xm-left {
+  float: left;
+}
+.xm-right {
+  float: right;
+}
+.xm-room-temp-humid {
+   margin: 5px;
+   
+}
+.xm-room-temp {
+    float: left;
+    width: 50%;
+    padding-top:2px;
+}
+.xm-room-humid {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-top:2px;
+}
+.xm-room-icons {
+   margin: 5px;
+   vertical-align: bottom;
+  // height: 100%;
+}
+.xm-door-icon {
+  float: left;
+  width: 33%;
+  padding-top:5px;
+}
+.xm-light-icon {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding-top:5px;
+}
+.xm-vent-icon {
+  float: right;
+  width: 33%;
+  text-align: right;
+  padding-top:5px;
+}
