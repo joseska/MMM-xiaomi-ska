@@ -87,24 +87,44 @@ Module.register('MMM-xiaomi-ska', {
     let wrapper = document.createElement('table');
     wrapper.className = 'xsmall';
 
-	console.log('total sensores: ' + self.sensors.length);
+	  console.log('total sensores: ' + self.sensors.length);
 
-    //if (self.sensors.length > 0) {
-      for (var i = 0; i < self.sensors.length; i++) {
+    for (var i = 0; i < self.sensors.length; i++) {
 
-        //if (self.sensors[i].type === 'sensor') {
+      if (self.sensors[i].type === 'sensor') {
+        // wrapper.innerHTML += `
+        //   <tr>
+        //     <td class="normal light small"> ${ self.sensors[i].type }</td >
+        //   </tr>
+        // `;
 
-          wrapper.innerHTML += `
-            <tr>
-              <td class="normal light small"> ${ self.sensors[i].type }</td >
-            </tr>
-          `;
+        wrapper.innerHTML += `
+          <td class="normal light small">Nombre</td>
+          <td class="battery">
+            <i class="fa fa-superpowers xm-icon"></i> ${self.sensors[i].temperature}º
+          </td>
+          < td class="battery" >
+            <i class="fa fa-superpowers xm-icon"></i> ${ self.sensors[i].humidity}%
+          </td >`;
+      }
 
-          
+      if (self.sensors[i].type === 'magnet') {
+        wrapper.innerHTML += `
+          <td class="normal light small">Nombre</td>
+          <td class="battery">
+            <i class="fa fa-superpowers xm-icon"></i> ${self.sensors[i].open}º
+          </td>`;
+      }
 
-        //}
+      if (self.sensors[i].type === 'power-plug') {
+        wrapper.innerHTML += `
+          <td class="normal light small">Nombre</td>
+          <td class="battery">
+            <i class="fa fa-superpowers xm-icon"></i> ${self.sensors[i].power}
+          </td>`;
+      }
 
-     // }
+
 
 
     }
